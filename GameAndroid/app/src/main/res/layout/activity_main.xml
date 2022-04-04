@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#292234"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/txvCoin"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_txv_coin"
+                android:gravity="center_vertical|right"
+                android:padding="5dp"
+                android:paddingRight="20dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/coin" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="SCORES"
+            android:textColor="#E56BA6"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/diem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Level"
+                android:textAllCaps="true"
+                android:textColor="#E56BA6"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_gravity="bottom"
+
+                />
+            <TextView
+                android:id="@+id/txvLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_gravity="bottom"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Time"
+                android:textAllCaps="true"
+                android:textColor="#E56BA6"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_gravity="bottom"
+
+                />
+            <TextView
+               android:id="@+id/Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00:00"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_gravity="bottom"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+    <GridView
+        android:id="@+id/gdvListOmau"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    </LinearLayout>
+</LinearLayout>
